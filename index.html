@@ -13,16 +13,19 @@
 <meta property="og:title" content="نحت | Naht - Coming Soon">
 <meta property="og:description" content="شركة إبداع سعودية - من الفكرة إلى الأثر. A Saudi Creative Company - From Idea to Trace.">
 <meta property="og:url" content="https://naht.co/">
-<meta property="og:image" content="https://naht.co/assets/og.png">
+<meta property="og:image" content="https://naht.co/assets/og.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/zarid-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/zawi-regular.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  @font-face{font-family:'Zawi';src:url('/assets/fonts/zawi-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+  @font-face{font-family:'Zawi';src:url('/assets/fonts/zawi-bold.woff2') format('woff2');font-weight:700;font-display:swap}
+  @font-face{font-family:'Zarid Text';src:url('/assets/fonts/zarid-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+  @font-face{font-family:'Zarid Text';src:url('/assets/fonts/zarid-bold.woff2') format('woff2');font-weight:700;font-display:swap}
   :root{
     --prim:#5E3044; --sec:#4A555E; --mid:#C9BEB3; --ivory:#F2EDE6; --ink:#42403C;
   }
@@ -30,7 +33,7 @@
   html,body{height:100%}
   body{
     background:#FFFFFF; color:var(--ink);
-    font-family:'Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;
+    font-family:'Zarid Text','Segoe UI',Tahoma,sans-serif;
     display:flex; flex-direction:column; min-height:100dvh;
     -webkit-font-smoothing:antialiased;
   }
@@ -41,19 +44,19 @@
   .logo{width:min(290px,62vw); height:auto; display:block; margin:0 auto 40px}
   .slogan{width:min(430px,80vw); height:auto; display:block; margin:0 auto 20px}
   .en{
-    font-family:'Poppins',sans-serif; font-weight:300; color:var(--sec);
+    font-family:'Zawi',sans-serif; font-weight:400; color:var(--sec);
     font-size:clamp(13px,2.6vw,17px); letter-spacing:.52em; text-indent:.52em;
     direction:ltr; margin-bottom:38px;
   }
   .rule{display:flex; align-items:center; justify-content:center; gap:0; margin:0 auto 38px; width:230px}
   .rule .line{flex:1; height:3px; background:var(--prim)}
   .rule .dia{width:11px; height:11px; background:var(--prim); transform:rotate(45deg); margin:0 10px; flex:none}
-  .soon-ar{font-size:clamp(20px,4vw,26px); font-weight:700; color:var(--prim); margin-bottom:6px}
-  .soon-en{font-family:'Poppins',sans-serif; font-weight:500; font-size:clamp(12px,2.4vw,15px);
+  .soon-ar{font-family:'Zawi',sans-serif; font-size:clamp(20px,4vw,26px); font-weight:700; color:var(--prim); margin-bottom:6px}
+  .soon-en{font-family:'Zawi',sans-serif; font-weight:400; font-size:clamp(12px,2.4vw,15px);
     letter-spacing:.34em; text-indent:.34em; color:var(--sec); direction:ltr; margin-bottom:44px}
   .contact{font-size:15px; color:var(--sec)}
   .contact a{
-    font-family:'Poppins',sans-serif; font-weight:500; color:var(--prim);
+    font-family:'Zawi',sans-serif; font-weight:400; color:var(--prim);
     text-decoration:none; direction:ltr; unicode-bidi:isolate; font-size:16px;
     border-bottom:2px solid var(--mid); padding-bottom:2px; transition:border-color .2s;
   }
@@ -61,7 +64,7 @@
   .guide{margin-top:22px; font-size:14px}
   .guide a{color:var(--sec); text-decoration:none; font-weight:700; transition:color .2s}
   .guide a:hover{color:var(--prim)}
-  .guide .en-inline{font-family:'Poppins',sans-serif; font-weight:300; font-size:12px; letter-spacing:.18em; color:var(--sec); direction:ltr; unicode-bidi:isolate}
+  .guide .en-inline{font-family:'Zawi',sans-serif; font-weight:400; font-size:12px; letter-spacing:.18em; color:var(--sec); direction:ltr; unicode-bidi:isolate}
   .wm{
     position:absolute; bottom:-60px; inset-inline-start:-40px; width:min(270px,32vw);
     opacity:.06; pointer-events:none; user-select:none; z-index:-1;
@@ -70,7 +73,7 @@
     padding:18px 22px 24px; text-align:center;
   }
   footer .credit{
-    font-family:'Poppins',sans-serif; font-weight:300; font-size:10.5px;
+    font-family:'Zawi',sans-serif; font-weight:400; font-size:10.5px;
     letter-spacing:.28em; text-indent:.28em; color:#8B857E; direction:ltr;
   }
   footer .bar{width:150px; height:5px; background:var(--prim); margin:16px auto 0}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نحت | Naht - Coming Soon</title>
+<meta name="description" content="نحت - وكالة إبداع سعودية. من الفكرة إلى الأثر. Naht - A Saudi Creative Agency. From Idea to Trace. Coming Soon.">
+<link rel="canonical" href="https://naht.co/">
+<meta name="theme-color" content="#5E3044">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Naht">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:title" content="نحت | Naht - Coming Soon">
+<meta property="og:description" content="وكالة إبداع سعودية - من الفكرة إلى الأثر. A Saudi Creative Agency - From Idea to Trace.">
+<meta property="og:url" content="https://naht.co/">
+<meta property="og:image" content="https://naht.co/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --prim:#5E3044; --sec:#4A555E; --mid:#C9BEB3; --ivory:#F2EDE6; --ink:#42403C;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html,body{height:100%}
+  body{
+    background:#FFFFFF; color:var(--ink);
+    font-family:'Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;
+    display:flex; flex-direction:column; min-height:100dvh;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center; padding:42px 24px 34px; position:relative; overflow:hidden;
+  }
+  .logo{width:min(290px,62vw); height:auto; display:block; margin:0 auto 40px}
+  .slogan{width:min(430px,80vw); height:auto; display:block; margin:0 auto 20px}
+  .en{
+    font-family:'Poppins',sans-serif; font-weight:300; color:var(--sec);
+    font-size:clamp(13px,2.6vw,17px); letter-spacing:.52em; text-indent:.52em;
+    direction:ltr; margin-bottom:38px;
+  }
+  .rule{display:flex; align-items:center; justify-content:center; gap:0; margin:0 auto 38px; width:230px}
+  .rule .line{flex:1; height:3px; background:var(--prim)}
+  .rule .dia{width:11px; height:11px; background:var(--prim); transform:rotate(45deg); margin:0 10px; flex:none}
+  .soon-ar{font-size:clamp(20px,4vw,26px); font-weight:700; color:var(--prim); margin-bottom:6px}
+  .soon-en{font-family:'Poppins',sans-serif; font-weight:500; font-size:clamp(12px,2.4vw,15px);
+    letter-spacing:.34em; text-indent:.34em; color:var(--sec); direction:ltr; margin-bottom:44px}
+  .contact{font-size:15px; color:var(--sec)}
+  .contact a{
+    font-family:'Poppins',sans-serif; font-weight:500; color:var(--prim);
+    text-decoration:none; direction:ltr; unicode-bidi:isolate; font-size:16px;
+    border-bottom:2px solid var(--mid); padding-bottom:2px; transition:border-color .2s;
+  }
+  .contact a:hover{border-color:var(--prim)}
+  .wm{
+    position:absolute; bottom:-60px; inset-inline-start:-40px; width:min(270px,32vw);
+    opacity:.06; pointer-events:none; user-select:none; z-index:-1;
+  }
+  footer{
+    padding:18px 22px 24px; text-align:center;
+  }
+  footer .credit{
+    font-family:'Poppins',sans-serif; font-weight:300; font-size:10.5px;
+    letter-spacing:.28em; text-indent:.28em; color:#8B857E; direction:ltr;
+  }
+  footer .bar{width:150px; height:5px; background:var(--prim); margin:16px auto 0}
+  .fade{opacity:0; transform:translateY(14px); animation:in .9s ease forwards}
+  .d1{animation-delay:.05s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}
+  .d4{animation-delay:.55s}.d5{animation-delay:.7s}.d6{animation-delay:.85s}
+  @keyframes in{to{opacity:1; transform:none}}
+  @media (prefers-reduced-motion: reduce){
+    .fade{animation:none; opacity:1; transform:none}
+  }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo fade d1" src="/assets/naht-logo.png" alt="نحت Naht" width="680" height="889">
+  <img class="slogan fade d2" src="/assets/slogan-cut.png" alt="من الفكرة إلى الأثر">
+  <div class="en fade d3">FROM IDEA TO TRACE</div>
+  <div class="rule fade d4" aria-hidden="true"><span class="dia"></span><span class="line"></span><span class="dia"></span></div>
+  <div class="soon-ar fade d5">قريباً</div>
+  <div class="soon-en fade d5">COMING SOON</div>
+  <div class="contact fade d6"><a href="mailto:contact@naht.co">contact@naht.co</a></div>
+  <img class="wm" src="/assets/naht-logo.png" alt="" aria-hidden="true">
+</main>
+<footer>
+  <div class="credit">A NAQSH HOLDING COMPANY</div>
+  <div class="bar" aria-hidden="true"></div>
+</footer>
+</body>
+</html>
